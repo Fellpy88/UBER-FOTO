@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Foto</title>
+</head>
+<body>
+    <h1>Verificação de Foto</h1>
+    <input type="file" id="fileInput" accept="image/*" />
+    <button onclick="submitPhoto()">Enviar Foto</button>
+    <script>
+        function submitPhoto() {
+            var input = document.getElementById('fileInput');
+            var file = input.files[0];
+            if (file) {
+                // Aqui você pode processar a foto ou apenas simular uma resposta
+                alert('Foto enviada!');
+                // Simulando uma resposta positiva
+                window.location.href = "https://example.com/response?status=success"; // Substitua com o link que você desejar
+            } else {
+                alert('Nenhuma foto selecionada.');
+            }
+        }
+    </script>
+</body>
+</html>
